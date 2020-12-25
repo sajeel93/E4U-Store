@@ -1,0 +1,153 @@
+* {
+  @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+  
+}
+body {
+  margin: 0;
+  font-family: Hind sans-serif !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Hind', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Hind', 'Courier New',
+    monospace;
+}
+
+.c-p-description {
+  margin-right: 20px;
+}
+
+.c-img-description {
+  height: 450px;
+  overflow: hidden;
+}
+
+
+.home-cat .box1 img,.box1:after,.box1:before{width:100%;transition:all .3s ease 0s}
+.home-cat .box1 .icon,.box2,.box3,.box4,.box5 .icon li a{text-align:center}
+.home-cat .box10:after,.box10:before,.box1:after,.box1:before,.box2 .inner-content:after,.box3:after,.box3:before,.box4:before,.box5:after,.box5:before,.box6:after,.box7:after,.box7:before{content:""}
+.home-cat .box1,.box11,.box12,.box13,.box14,.box16,.box17,.box18,.box2,.box20,.box21,.box3,.box4,.box5,.box5 .icon li a,.box6,.box7,.box8{overflow:hidden}
+.home-cat .box1 .title,.box10 .title,.box4 .title,.box7 .title{letter-spacing:1px}
+.home-cat .box3 .post,.box4 .post,.box5 .post,.box7 .post{font-style:italic}
+.home-cat .mt-30{margin-top:30px}
+.home-cat .mt-40{margin-top:40px}
+.home-cat .mb-30{margin-bottom:30px}
+.home-cat .box1 .icon,.box1 .title{margin:0;position:absolute}
+.home-cat .box1{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
+.home-cat .box1:after,.box1:before{height:50%;background:rgba(0,0,0,.5);position:absolute;top:0;left:0;z-index:1;transform-origin:100% 0;transform:rotateZ(90deg)}
+.home-cat .box1:after{top:auto;bottom:0;transform-origin:0 100%}
+.home-cat .box1:hover:after,.box1:hover:before{transform:rotateZ(0)}
+.home-cat .box1 img{height:auto;transform:scale(1) rotate(0)}
+.home-cat .box1:hover img{filter:sepia(80%);transform:scale(1.3) rotate(10deg)}
+.home-cat .box1 .title{font-size:19px;font-weight:600;color:#fff;text-transform:uppercase;text-shadow:0 0 1px #004cbf;bottom:10px;left:10px;opacity:0;z-index:2;transform:scale(0);transition:all .5s ease .2s}
+.home-cat .box1:hover .title{opacity:1;transform:scale(1)}
+.home-cat .box1 .icon{padding:7px 5px;list-style:none;background:#004cbf;border-radius:0 0 0 10px;top:-100%;right:0;z-index:2;transition:all .3s ease .2s}
+.home-cat .box1:hover .icon{top:0}
+.home-cat .box1 .icon li{display:block;margin:10px 0}
+.home-cat .box1 .icon li a{display:block;width:35px;height:35px;line-height:35px;border-radius:10px;font-size:18px;color:#fff;transition:all .3s ease 0s}
+.home-cat .box2 .icon li a,.box3 .icon a:hover,.box4 .icon li a:hover,.box5 .icon li a,.box6 .icon li a{border-radius:50%}
+.home-cat .box1 .icon li a:hover{color:#fff;box-shadow:0 0 10px #000 inset,0 0 0 3px #fff}
+@media only screen and (max-width:990px){.home-cat .box1{margin-bottom:30px}
+}
+
+
+.p-trending .product-card {
+  position: relative;
+  cursor: pointer
+}
+
+.p-trending .product-card .sale {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: red;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 10px;
+  top: 10px;
+  font-size: 14px
+}
+
+.p-trending .product-card .price {
+  border-radius: 5px;
+  color: red;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  top: 6px;
+  font-size: 15px
+}
+
+.p-trending .buttons {
+  position: absolute;
+  left: 25%;
+  bottom: 30px
+}
+
+
+.p-trending .buttons button {
+  margin: 0;
+  margin-left: 7px;
+  padding: 0 12px;
+  font-weight: 300;
+  background-color: #dc9814;
+  border: none
+}
+
+.p-trending .search {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  padding: 10px
+}
+
+.p-trending .buttons button {
+  height: 38px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 12px
+}
+
+.p-trending .buttons button:hover {
+  background-color: #404040
+}
+
+.p-trending .product-card .buttons {
+  opacity: 0;
+  transition: all 0.5s
+}
+
+.p-trending .product-card:hover .buttons {
+  opacity: 1
+}
+
+.p-trending .product {
+  margin-bottom: 20px;
+
+}
+
+footer.page-footer {
+  background: #eeeeee;
+}
+.minus, .plus {
+  padding: 5px;
+}

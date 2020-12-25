@@ -1,0 +1,106 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+.flast-products .col-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.flast-products .col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flast-products .col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.flast-products .col-item:hover .info {
+    background-color: #F5F5DC;
+}
+.flast-products .col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.flast-products .col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+    height: 110px;
+}
+
+.flast-products .price-text-color
+{
+    color: #219FD1;
+}
+
+.flast-products .col-item .info .rating
+{
+    color: #777;
+}
+
+.flast-products .col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.flast-products .col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.flast-products .clear-left
+{
+    clear: left;
+}
+
+.flast-products .col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.flast-products .col-item .separator p i
+{
+    margin-right: 5px;
+}
+.flast-products .col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.flast-products .col-item .btn-add
+{
+    border-right: 1px solid #E1E1E1;
+}
+
+.flast-products .col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.flast-products .controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+
