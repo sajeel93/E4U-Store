@@ -20,7 +20,7 @@ export default function Cart() {
             <div className="mb-3">
               <div className="pt-4 wish-list">
 
-                <h5 className="mb-4">Cart (<span>{qty}</span> items)</h5>
+                <h5 className="mb-4">Cart (<span>{shoppingCart.length}</span> items)</h5>
 
                 
                   {
@@ -43,14 +43,15 @@ export default function Cart() {
                           <p className="mb-3 text-muted text-uppercase small">Price - {item.price}</p>
                           <p className="mb-2 text-muted text-uppercase small">Category - {item.category}</p>
                           <div className="def-number-input number-input safari_only mb-0 w-100">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            <button onClick={() => dispatch({type: 'DEC', id: item.id, item})}
                               className="fa fa-minus minus decrease"></button>
-                            <input className="quantity" min="0" name="quantity" value={item.qty} type="number" />
-                            <button onclick={() => dispatch({type: 'INC', id: item.id, item})}
+                            <input className="quantity" min="0" name="quantity" type="number" value={item.qty} />
+                            <button onClick={() => dispatch({type: 'INC', id: item.id, item: item})}
                               className="fa fa-plus plus increase"></button>
                           </div>
+
                           <small id="passwordHelpBlock" className="form-text text-muted text-center">
-                            (Note, 1 piece)
+                            Total price: {item.price * item.qty}
                           </small>
                         </div>
                         </div>
@@ -128,9 +129,10 @@ export default function Cart() {
 
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                   ( {qty} ) Products Amount
+                   ( {shoppingCart.length} ) Products Amount
                     <span>{totalPrice}</span>
                   </li>
+                  <small>with total item qty({qty})</small>
                   <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                     Shipping
                     <span>{shopping}</span>

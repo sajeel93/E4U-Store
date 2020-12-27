@@ -27,10 +27,24 @@ const CartReducer = (state, action) => {
             prodct = action.item;
             prodct.qty = prodct.qty + 1;
             updatedPrice = totalPrice + prodct.price;
-            updatedQty = qty + prodct.qty;
+            updatedQty = qty + 1;
             index = shoppingCart.findIndex(value => value.id === action.id);
             shoppingCart[index] = prodct;
             return {shoppingCart: [...shoppingCart], totalPrice: updatedPrice, qty: updatedQty}
+            
+        case 'DEC':
+            prodct =action.item;
+            if(prodct.qty > 1) {
+                prodct.qty = prodct.qty -1;
+                updatedPrice = totalPrice - prodct.price;
+                updatedQty = qty - 1;
+                index = shoppingCart.findIndex(val => val.id === action.id);
+                shoppingCart[index] = prodct;
+                return {shoppingCart: [...shoppingCart], totalPrice: updatedPrice, qty: updatedQty}
+            }   
+            else {
+                return state;
+            } 
 
             
 
