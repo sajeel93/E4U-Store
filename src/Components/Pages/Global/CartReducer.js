@@ -46,6 +46,13 @@ const CartReducer = (state, action) => {
                 return state;
             } 
 
+        case 'DELETE':
+            const filterCart = shoppingCart.filter(val => val.id !== action.id)
+            prodct = action.item;
+            updatedQty = qty - prodct.qty;
+            updatedPrice = totalPrice - prodct.price * prodct.qty;
+            return{shoppingCart: [...filterCart], totalPrice: updatedPrice, qty: updatedQty}
+
             
 
 

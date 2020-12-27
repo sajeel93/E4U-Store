@@ -60,7 +60,7 @@ export default function Cart() {
                       <br />
                       <div className="d-flex justify-content-between align-items-center">
                         <div>
-                          <Link to="" type="button" className="card-link-secondary small text-uppercase mr-3"><i
+                          <Link onClick={() => dispatch({type: 'DELETE', id: item.id, item: item})} to="" type="button" className="card-link-secondary small text-uppercase mr-3"><i
                               className="fas fa-trash-alt mr-1"></i> Remove item </Link>
                           <Link to="" type="button" className="card-link-secondary small text-uppercase"><i
                               className="fas fa-heart mr-1"></i> Move to wish list </Link>

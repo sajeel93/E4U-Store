@@ -84,7 +84,7 @@ function CommonCart(props) {
 
 function CommonTrending(props) {
 
-    console.log(props, "Trending product props")
+   
     return(
         <>
         {
