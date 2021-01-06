@@ -52,12 +52,6 @@ const CartReducer = (state, action) => {
             updatedQty = qty - prodct.qty;
             updatedPrice = totalPrice - prodct.price * prodct.qty;
             return{shoppingCart: [...filterCart], totalPrice: updatedPrice, qty: updatedQty}
-
-            
-
-
-          
-
         
         default:
             return state;

@@ -1,12 +1,18 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import {CartContext} from './Global/CartContext'
+import StripeCheckout from 'react-stripe-checkout'
 
 export default function Cart() {
 
     const {shoppingCart, totalPrice, qty, dispatch} = useContext(CartContext)
     const shopping = 5;
     const totalAmount = totalPrice + shopping;
+    const handleToken = (token) => {
+
+      console.log(token, "Stripe Token")
+
+    }
 
     return (
 
@@ -149,6 +155,22 @@ export default function Cart() {
                 </ul>
 
                 <button type="button" className="btn btn-primary btn-block">go to checkout</button>
+                {
+                  shoppingCart.length > 0 
+                  ? 
+                  <StripeCheckout
+                  stripeKey="pk_test_51I4lMGIL8KfcVAxJYXEkLRWgLLeyT5BSYsbb65TECbqNejfw937lHjC8ZtgOT1Y6Tg7LGT1GsCYrwmVJ0HQJJGPU004qsUSgZ6"
+                  token={handleToken}
+                  billingAddress
+                  shippingAddress
+                  amount={totalAmount * 100}
+                  name="Secure Checkout"
+                  >
+
+                  </StripeCheckout> 
+                  : 
+                  ""
+                }
 
               </div>
             </div>
