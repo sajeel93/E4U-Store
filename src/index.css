@@ -17,7 +17,11 @@ body {
   bottom: auto;
 }
 
-
+.text-caption-s span, .text-caption-s2 span {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 5px 10px;
+}
 
 
 
@@ -91,7 +95,6 @@ code {
   .text-caption-s h4, .text-caption-s2 h4 {
     font-size: 70px;
     font-family: sans-serif;
-    color: #000;
   }
   
   .text-caption-s p, .text-caption-s2 p {

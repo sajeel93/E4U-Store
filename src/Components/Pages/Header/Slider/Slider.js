@@ -16,7 +16,7 @@ function Slder() {
                 <img className="d-block w-100" src={Imgone} alt="First slide" />
                 <div className="carousel-caption d-none d-md-block text-caption-s">
                     <h5 className="align-items-center d-flex justify-content-center text-caption-s-t">Welcome</h5>
-                    <h4>Flash Sale!</h4>
+                    <h4><span>Flash Sale!</span></h4>
                     <p>Save up to 70%</p>
                     <button>BUY NOW!</button>
                 </div>
@@ -25,7 +25,7 @@ function Slder() {
                 <img className="d-block w-100" src={Img2} alt="Second slide" />
                 <div className="carousel-caption d-none d-md-block text-caption-s2">
                     <h5 className="align-items-center d-flex justify-content-center text-caption-s-t2">Summer 2021</h5>
-                    <h4>New Arrivals!</h4>
+                    <h4><span>New Arrivals!</span></h4>
                     <p>Save up to 70%</p>
                     <button>SHOP NOW!</button>
                 </div>
