@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { CommonTrending } from './Common'
+import {ProductsContext} from '../New/Global/ProductsContext'
 
 function Trending() {
-    const [data, setData] = useState([])
 
-    useEffect(() => {
-        fetch('https://fakestoreapi.com/products/')
-        .then(res => res.json())
-        .then(val => setData(val.slice(14,20)))
+    const data = useContext(ProductsContext)
 
-    }, [])
     return(
         <>
 
@@ -19,7 +15,7 @@ function Trending() {
 
                 <div className="text-center mt-5 gy-5">
                     <h1 className="display-2">Trending Products</h1>
-                    <h6 className="">Through Api Fetch Data</h6>
+                    <h6 className="">Through (useContext) Api Fetch Data</h6>
                     <hr />
                 </div>
 

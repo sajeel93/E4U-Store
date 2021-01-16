@@ -56,19 +56,9 @@ function CommonCart(props) {
                         <img src={item.image} className="card-img-top c-img-description" alt="" />
                         <div className="card-body">
                         <h6 className="card-category text-center">{item.category}</h6>
-                        <h3 className="card-title">{item.title}</h3>
+                        <h3 className="card-title featured-c-t">{item.title}</h3>
                         <h5 className="card-price">{item.price}</h5>
-                        <Collapse in={open}>
-                            <div id="example-collapse-text" value={item.id}>
-                            <p className="card-text">{item.description}</p>
-                            </div>
-                        </Collapse>
-                    <Button className="c-p-description" onClick={() => setOpen(!open)} 
-                        aria-controls="example-collapse-text"
-                        aria-expanded={open}
-                    >
-                        Description
-                    </Button>
+                        
                     
                         <Link to="" className="btn btn-primary" onClick={() => dispatch({type: 'ADD_TO_CART', id: item.id, product: item})}>Add to Cart</Link>
                         </div>
@@ -84,11 +74,16 @@ function CommonCart(props) {
 
 function CommonTrending(props) {
 
+    const fdata = props.tdata.apidata.slice(14,20);
+    
+
    
     return(
         <>
         {
-            props.tdata.map((item) => (
+            
+
+            fdata.map((item) => (
                 <div key={item.id} className="col-md-4">
                     <div className="product">
             <div className="product-card"> <span className="sale">Sale</span> <span className="price">{item.price}</span> <img src={item.image} alt="" className="rounded img-fluid" />

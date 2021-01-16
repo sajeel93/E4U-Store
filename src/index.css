@@ -19,6 +19,8 @@ body {
 
 
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Hind', 'Courier New',
     monospace;
@@ -60,6 +62,11 @@ code {
 .home-cat .box1 .icon li a:hover{color:#fff;box-shadow:0 0 10px #000 inset,0 0 0 3px #fff}
 
 @media only screen and (min-width:990px) {
+
+  .featured-c-t {
+    height: 39px;
+    overflow: hidden;
+  }
 
   .text-caption-s {
     top: 120px;
