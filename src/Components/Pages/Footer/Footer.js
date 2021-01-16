@@ -109,8 +109,8 @@ function Footer() {
                 <Social />
 
 
-                <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                    <Link to="https://mdbootstrap.com/"> MDBootstrap.com</Link>
+                <div className="footer-copyright text-center py-3">Designed by:  
+                      <a href="https://www.fiverr.com/sajeel_expert/">  Sajeel Siddiqui </a>
                 </div>
 
         </footer>

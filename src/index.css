@@ -23,7 +23,10 @@ body {
   padding: 5px 10px;
 }
 
-
+.footer-copyright a{
+  text-decoration: none;
+  font-size: x-large;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Hind', 'Courier New',
@@ -80,7 +83,7 @@ code {
   .text-caption-s2 {
     top: 120px;
     bottom: auto;
-    color: blue !important;
+    color: #0d6efd !important;
   }
 
   .text-caption-s-t {
@@ -106,12 +109,13 @@ code {
     color: rgb(255, 255, 255);
     background: #000;
     border-radius: 6px;
+    border: 1px solid #fff;
     padding: 10px 30px;
     font-family: sans-serif;
     margin-top: 30px;
   }
   .text-caption-s button:hover, .text-caption-s2 button:hover  {
-    background: #004cbf;
+    background: #0d6efd;
   }
 }
 

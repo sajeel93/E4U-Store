@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { CommonTrending } from './Common'
 import {ProductsContext} from '../New/Global/ProductsContext'
+import {CartContext} from '../Pages/Global/CartContext'
 
 function Trending() {
 
     const data = useContext(ProductsContext)
+    const {dispatch} = useContext(CartContext)
 
     return(
         <>
@@ -23,7 +25,7 @@ function Trending() {
         <div className="p-trending mt-5">
             <div className="row g-2">
 
-                <CommonTrending tdata={data} />
+                <CommonTrending tdata={data} dispatch={dispatch}/>
                 
                
             </div>

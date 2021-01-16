@@ -73,19 +73,18 @@ function CommonCart(props) {
 function CommonTrending(props) {
 
     const fdata = props.tdata.apidata.slice(14,20);
+    const dispatch = props.dispatch;
     
-
-   
     return(
         <>
-        {
-            
-
+        {        
             fdata.map((item) => (
                 <div key={item.id} className="col-md-4">
                     <div className="product">
             <div className="product-card"> <span className="sale">Sale</span> <span className="price">{item.price}</span> <img src={item.image} alt="" className="rounded img-fluid" />
-                            <div className="buttons d-flex flex-row"> <span className="search"><i className="fa fa-search"></i></span> <button className="btn btn-primary btn-sm">Add to cart</button> </div>
+                            <div className="buttons d-flex flex-row"> <span className="search"><i className="fa fa-search"></i></span> 
+                              <button className="btn btn-primary btn-sm" onClick={() => dispatch({type: 'ADD_TO_CART', id: item.id, product: item})}>Add to cart</button> 
+                            </div>
                         </div>
                     </div>
                 </div>
