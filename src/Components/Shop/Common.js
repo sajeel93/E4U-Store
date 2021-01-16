@@ -41,7 +41,6 @@ import { Link } from 'react-router-dom';
 
 function CommonCart(props) {
     
-    const [open, setOpen] = useState(false);
 
     const apiData = props.apiData.slice(0,6)
     const dispatch = props.dispatch
