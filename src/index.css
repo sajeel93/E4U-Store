@@ -219,3 +219,24 @@ footer.page-footer {
 .minus, .plus {
   padding: 5px;
 }
+
+@media only screen and (max-width:767px) {
+
+  .text-caption-s, .text-caption-s2 {
+    top: 50px !important;
+  }
+  .text-caption-s button, .text-caption-s2 button {
+    margin-top: 0px !important;
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width:420px) {
+
+  .text-caption-s, .text-caption-s2 {
+    top: 0px !important;
+  }
+  
+
+}
